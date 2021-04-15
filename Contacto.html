@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Formulario de contacto</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="estilos.css">
+    
+
+     <!--Scripts-->
+     <script src="/js/script.js"></script>
+
+</head>
+<body>
+
+    <!--Menu de Navegacion-->
+    <nav class="menu">
+        <div class="logobox">
+            <h1 class="logo"><a href="#">
+                <i class="fas fa-tree"></i>
+                ZooPark
+                </a>
+            </h1>
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <div class="list-container">
+            <ul class="lists">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Animales.html">Animales</a></li>
+                <li><a href="Contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="user"><img src="./img/round-account-button-with-user-inside.png" alt="" width="150" height="150" hspace="3"></span>
+                <h2>INFORMACIÓN<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="correo"><img src="./img/email.png" alt="" width="30" height="30" hspace="10"></span> zoopark@gmail.com</p>
+                <p><span><img src="./img/call.png" alt="" width="30" height="30" hspace="10"></span> +1(477) 8753910</p>
+            </section>
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names">
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje"></textarea>
+
+                <input type="button" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+
+    <!--footer-->
+    <footer>
+        <p>&copy; Todos los derechos reservados 2021 - ZooPark</p>
+    </footer>
+
+</main>
+</body>
+</html>

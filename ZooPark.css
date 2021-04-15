@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+    color: black;
+}
+
+/**Menu de navegacion**/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.btn-menu{display: none;}
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu .logobox h1>a>i{color: yellowgreen; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color: blue;
+    margin: 0px 10px;
+    font-size: 19px;
+    transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color: yellowgreen;}
+.menu .list-container .lists li a.active{color: yellowgreen;}
+
+/**Img Header**/
+.img-header{
+    background: url(./ZooPark-Beta-master/img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: soft-light;
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.img-header .welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h4{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.img-header .welcome>h2{margin-top: 50px;}
+.img-header .welcome > h2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+.img-header .welcome>h2 a>i{color: yellowgreen; margin-right: 10px;}
+
+/**Acerca de nosotros**/
+.about{width: 100%;}
+.about .info{
+    width: 100%;
+    margin-top: 100px;
+}
+.about .info h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.about .info p{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about .info hr{
+    width: 90%;
+    border: none;
+    height: 2px;
+    background: #4d4d4d;
+    margin: auto;
+}
+.about .Contenido-gratis{
+    width: 100%;
+    margin-top: 100px;
+    background: #1b9cfc;
+    padding: 30px;
+}
+.about .Contenido-gratis h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+.about .Contenido-gratis .icons{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+.about .Contenido-gratis .icons>div{width: 100%; margin: 0px 30px;}
+.about .Contenido-gratis .icons>div>.span-icon{
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.about .Contenido-gratis .icons>div h6{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 0px 5px 0px;
+}
+.about .Contenido-gratis .icons>div p{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/**Galeria**/
+.galeria-section{
+    width: 100%;
+}
+.animal-icon{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.animal-icon i{
+    font-size: 120px;
+    color: black;
+}
+.gallery-content{
+    width: 90%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 10px;
+}
+.gallery-content .img-card{
+width: 100%;
+height: 100%;
+}
+.gallery-content .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    display: none;
+}
+.modal #imgModal{
+    width: 75%;
+    margin: 50px auto;
+    height: 75%;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+}
+.modal #caption{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.modal #closemodal{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/**Footer**/
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    background: black;
+}
+footer p{
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
